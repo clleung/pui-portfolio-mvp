@@ -38,6 +38,42 @@ font-family: 'Raleway', sans-serif;
 /*
 Media Queries
 */
+/* @media (max-width: 500px){
+    .thumbnail {
+    
+        height:125px;
+        margin-bottom: 8%;
+        width: 225px;
+    }
+    .blurb {
+        width: 100%;
+    }
+}
+@media (min-width: 501px) and (max-width: 640px){
+    .thumbnail {
+    
+        height:200px;
+        margin-bottom: 8%;
+        
+        width: 360px;
+    }
+    .blurb {
+        width: 50%;
+    }
+}
+
+@media (min-width: 641px){
+    .thumbnail {
+    
+        height:250px;
+        margin-bottom: 8%;
+        
+        width: 450px;
+    }
+    .blurb {
+        width: 30%;
+    }
+} */
 
 
 /*
@@ -222,7 +258,59 @@ strong {
     padding: 20px;
 
 }
+/********************* 
+X. Modal Styles 
+*********************/
+.thumbnail {
+    
+    height:300px;
+    margin-bottom: 8%;
+    
+    width:540px;
+}
+[id ^= "label"]{
+    font-family: 'Noto Sans', sans-serif;
 
+}
+.modal-title{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+.modal-subtitle{
+    font-size: 1.2rem;
+    line-height:1.5rem;
+    padding: 0.3rem 0rem;
+    margin:0;
+}
+.modal-location{
+    color: #576772;
+    font-size: 1rem;
+    line-height:1.1rem;
+    padding: 0.1rem 0rem;
+    margin:0;
+}
+.modal-header{
+    padding-bottom:0;
+}
+.modal-body{
+    padding-top:0;
+    
+}
+.modalnail{
+    height:300px;
+    margin-bottom: 8%;
+    
+    width: 540px;
+}
+.btn{
+    padding: .5rem 1.25rem;
+}
+.to-work{
+    color: #041520;
+    background-color: #C1D2DE;
+    border-color: #C1D2DE;
+}
 
 /********************* 
 2. Navigation Styles 
