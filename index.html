@@ -16,13 +16,10 @@
         <!--ADD: favicon-->
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
-        
-        
+
          <!-- Bootstrap core CSS -->
          <link href = "css/bootstrap.min.css" rel = "stylesheet">
-        
-         
- 
+
          <!-- Javascript-->
          <script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
          <script>window.jQuery || document.write('<script src="../js/vendor/jquery.slim.min.js"><\/script>')</script>
@@ -30,22 +27,16 @@
          
          <!--CSS STYLESHEETS-->
          <link href="css/uikit.min.css" rel="stylesheet" />
-         <!-- <link href="css/bootstrap.css" rel="stylesheet">
-         <link href="css/bootstrap.rtl.css" rel="stylesheet">
-         <link href="css/bootstrap.min.css" rel="stylesheet">
-         <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
-         <link href="css/styles.css" rel="stylesheet"> -->
-         <!-- CSS-->
          <link href = "css/styles.css" rel = "stylesheet"> 
+         <link href = "css/chips.css" rel = "stylesheet"> 
+
          <!--JS-->
          <script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
          <script>window.jQuery || document.write('<script src="../js/vendor/jquery.slim.min.js"><\/script>')</script>
-         <!-- <script src="js/bootstrap.bundle.js"></script>
-         <script src="js/bootstrap.bundle.min.js"></script> -->
          <script src="js/uikit.min.js"></script>
          <script src="js/uikit-icons.min.js"></script>
-     
-    
+         <script src="js/chips.js"></script>
+
     </head>
     <header>
         <nav class="uk-navbar-container uk-navbar-transparent" id="top-nav" uk-navbar>
@@ -56,16 +47,15 @@
         
                 <ul class="uk-navbar-nav">
                     <!-- change to jump down to featured projects -->
-                    <li class="uk-active active nav-item a-ua p-4"><a href="index.html">Work</a></li>
-                    <!-- <li class="nav-item a-ua p-4">
-                        <a href="gallery.html">Gallery</a>
-                    </li> -->
+                    <li class="uk-active active nav-item a-ua p-4">
+                        <a href="index.html">Work</a>
+                    </li>
                     <li class="nav-item a-ua p-4">
                         <a href="about.html">About</a>
                     </li>
-                    <li class="nav-item a-ua p-4">
+                    <!-- <li class="nav-item a-ua p-4">
                         <a href="contact.html">Contact</a>
-                    </li>
+                    </li> -->
                
                     <li class="nav-item a-ua p-4">
                         <a href="files/Lisa Leung Resume 09.21.21.pdf" target="_blank">Resume</a>
@@ -121,9 +111,7 @@
                         </p>
                     </div>
                 </div>
-                
                 <div class="sticky-contact">
-    
                 </div><!--end sticky-contact-->
                 <ul class="uk-flex uk-flex-left uk-iconnav">
                     <!--<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
@@ -131,14 +119,12 @@
                     <li><a class="uk-padding"href="https://github.com/clleung" uk-icon="icon: github; ratio: 3"></a></li>
                     <li><a class="uk-padding"href="https://www.linkedin.com/in/cllisaleung/" uk-icon="icon: linkedin; ratio: 3"></a></li>
                 </ul>
-                 
             </div>  <!--end container-->
             <div class="uk-flex uk-flex-center">
                 <!-- <h5 id="arrow-text">Scroll down to view projects</h5> -->
                 <div class="arrow"></div>
             </div>
         </div><!--end hero-->
-        
         <div class="projects container">
             <!--ROW 1-->
             <div class="row">
@@ -146,12 +132,35 @@
                     <!-- OppLab Button trigger modal -->
                     <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#opplab-modal">
                         <img class="thumbnail rounded shadow" src = "images/project-cards/opplab.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>research</span>
+                              </div>
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>writing</span>
+                              </div>
+                            </div>
+                        </fieldset>
                     </button> 
                 </div> <!--end col-->
                 <div class="col">
                     <!-- AWS Button trigger modal -->
                     <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#aws-modal">
                         <img class="thumbnail rounded shadow" src = "images/project-cards/aws.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>writing</span>
+                              </div>
+                            </div>
+                        </fieldset>
                     </button> 
                 </div> <!--end col-->
             </div><!--end row 1-->
@@ -161,12 +170,38 @@
                     <!-- CAPSEA Button trigger modal -->
                     <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#capsea-modal">
                         <img class="thumbnail rounded shadow" src = "images/project-cards/capsea.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>nonprofit</span>
+                              </div>
+                              <div class = "chip">
+                                <span>consulting</span>
+                              </div>
+                            </div>
+                        </fieldset>
                     </button> 
                 </div> <!--end col-->
                 <div class="col">
                     <!-- Auditbot Button trigger modal -->
                     <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#audit-modal">
                         <img class="thumbnail rounded shadow" src = "images/project-cards/audit.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>design</span>
+                              </div>
+                              <div class = "chip">
+                                <span>user research</span>
+                              </div>
+                            </div>
+                        </fieldset>
                     </button> 
                 </div> <!--end col-->
             </div><!--end row 2-->
@@ -176,16 +211,41 @@
                     <!-- rebloom Button trigger modal -->
                     <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#rebloom-modal">
                         <img class="thumbnail rounded shadow" src = "images/project-cards/rebloom.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>nonprofit</span>
+                              </div>
+                              <div class = "chip">
+                                <span>consulting</span>
+                              </div>
+                            </div>
+                        </fieldset>
                     </button> 
                 </div> <!--end col-->
                 <div class="col">
                     <!-- usable privacy Button trigger modal -->
                     <button type="button" class="btn mx-auto d-block" data-bs-toggle="modal" data-bs-target="#usable-modal">
                         <img class="thumbnail rounded shadow" src = "images/project-cards/usable-privacy.jpg" alt="...">
+                        <fieldset>
+                            <div class = "chip-group">
+                              <div class = "chip">
+                                <span>team</span>
+                              </div>
+                              <div class = "chip">
+                                <span>research</span>
+                              </div>
+                              <div class = "chip">
+                                <span>data</span>
+                              </div>
+                            </div>
+                        </fieldset>
                     </button> 
                 </div> <!--end col-->
             </div><!--end row 3-->
-            
         </div><!--end projects container-->
         <!-- OppLab Modal -->
         <div id = "opplab-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -218,35 +278,7 @@
                                     </p>
                                 </div>
                             </div>
-                        </div><!--end container-->
-
-                        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="modalnail mx-auto d-block w-100 rounded shadow" src = "images/gallery/Opplab-thumbnail.png" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                            </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>  -->
-                    
+                        </div><!--end container-->        
                     </div><!--end modal-body-->
                     <div class="modal-footer">
                         <button type="button" class="btn to-work" disabled>Coming Soon!</button>
@@ -378,7 +410,7 @@
             </div> <!--end modal-dialog-->
         </div><!--end audit modal-->
         <!-- rebloom Modal -->
-        <div id = "audit-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div id = "rebloom-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered opplab">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -469,14 +501,13 @@
     <br>
     <br>
     <br>
-    
     <footer>
         <div class="footer-main">
             <div class="uk-child-width-expand@s" uk-grid>
                 <div class="uk-width-1-3 ">
                     <div class="uk-card uk-card-body">
                         <h3 class="brand ">cl/lisaleung</h3>
-                        <h5 class="sub-">Cho-Lin Lisa Leung</h5>
+                        <h5 class="footer-subtitle">Cho-Lin Lisa Leung</h5>
                         <ul class="uk-flex uk-flex-left uk-iconnav">
                             <!--<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
                             <li><a class="uk-padding uk-padding-remove-left"href="mailto:clleung@andrew.cmu.edu"><img id="mail-icon"src="images/icons/email.svg"></a></li>
@@ -488,14 +519,26 @@
                  <div class = "bot-layer">
                     <br>
                     <br>
-                    <p>
-                        Hosted on Firebase and Github. Made with <a href = "https://getbootstrap.com/docs/4.0/about/license/"><strong>Bootstrap</strong></a> and <a href="https://getuikit.com/"><strong>UIkit</strong></a>.
-                    </p>
+                    <p></p>
+                    
+                    <a class="footer-links" href="index.html">Work</a>
+                    <br>
+                    <br>
+                    <a class="footer-links" href="about.html">About</a>
+                    <br>
+                    <br>
+                    <!-- <a class="footer-links" href="contact.html">Contact</a>
+                    <br>
+                    <br> -->
+                    <a class="footer-links" href="files/Lisa Leung Resume 09.21.21.pdf" target="_blank">Resume</a>
                   </div> <!--end top-layer-->
                   <div class = "mid-layer">
                       <br>
                       <br>
                     <p>
+                        Hosted on Firebase and Github. Made with <a href = "https://getbootstrap.com/docs/4.0/about/license/"><strong>Bootstrap</strong></a> and <a href="https://getuikit.com/"><strong>UIkit</strong></a>.
+                        <br>
+                        <br>
                         This site is maintained by <a href = "https://github.com/clleung" ><strong>Lisa Leung</strong></a>. View this project on <a href = "https://github.com/clleung/portfolio"><strong>GitHub</strong></a>
                     </p>
                   </div> <!--end mid-layer-->
@@ -506,10 +549,7 @@
                     </p>
                     
                   </div> <!--end bot-layer-->
-                 
             </div>
-    
         </div><!--end footer-main-->
-        
     </footer>
 </html>
